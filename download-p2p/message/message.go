@@ -51,7 +51,7 @@ func FormatHave(index int) *Message {
 	return &Message{ID: MsgHave, Payload: payload}
 }
 
-func ParePiece(index int, buf []byte, msg *Message) (int, error) {
+func ParsePiece(index int, buf []byte, msg *Message) (int, error) {
 	if msg.ID != MsgPiece {
 		return 0, fmt.Errorf("Expected PIECE (ID %d), got ID %d", MsgPiece, msg.ID)
 	}
