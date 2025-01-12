@@ -1,6 +1,7 @@
 package torrent_file
 
 import (
+	"download-p2p/peers"
 	"github.com/jackpal/bencode-go"
 	"net/http"
 	"net/url"

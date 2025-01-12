@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"crypto/rand"
 	"crypto/sha1"
+	"download-p2p/p2p"
 	"fmt"
 	"github.com/jackpal/bencode-go"
 	"os"
